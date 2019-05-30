@@ -150,7 +150,7 @@ module.exports = grunt => {
 				tasks: 'test'
 			},
 			html: {
-				files: root.map(path => path + '/*.html')
+				files: root.map(path => path + 'decks/*/*.html')
 			},
 			markdown: {
 				files: root.map(path => path + '/*.md')

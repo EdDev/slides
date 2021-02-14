@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Go Write Tests using Pragmatic Best Practices</title>
+		<meta name="description" content="Tests are written to assure the correctness and quality of the solution they examine.
+Engineers write tests at different stages of the development cycle, starting at unit tests up to e2e tests.
+In fact, for every line of production code, multiple lines of test code is written.
+
+Writing tests is no different from writing production code. In order to keep it running correctly and assist in detecting issues, it needs to be written in a way that can stand the test of time, provide the needed information on failures and be maintained for the project lifetime.
+
+This talk presents test best practices which can be applied at all test stages.
+The practices are focused to help write good tests and provide the needed information for debugging and troubleshooting the issues detected.
+
+While each language and test framework may present different properties and challenges, the practices are agnostic to a specific language/tool.
+
+Examples will be given in Golang using Ginkgo/Gomega and in Python using PyTest.
+
+The talk will cover:
+- Test structure
+- Test isolation
+- Test fixtures vs test body
+- Assertion
+- Traceability
+- Shared resources
+- Dead test (code)
+- Skipping, xfailing or not running
+- Parallel tests
+
+The talk is based on the following blog post: https://ehaas.net/blog/tests-best-practices">
+
+		<link rel="stylesheet" href="../../css/reset.css">
+		<link rel="stylesheet" href="../../css/reveal.css">
+		<link rel="stylesheet" href="../../css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../../lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown="content.md"
+					 data-separator-vertical="^\r?\n--\r?\n$"
+					 data-separator-notes="^note:">
+				</section>
+			</div>
+		</div>
+
+		<script src="../../js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: '../../plugin/markdown/marked.js' },
+					{ src: '../../plugin/markdown/markdown.js' },
+					{ src: '../../plugin/notes/notes.js', async: true },
+					{ src: '../../plugin/highlight/highlight.js', async: true },
+					{ src: '../../plugin/zoom-js/zoom.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
